@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Beauty Hair Salon</title>
     <link rel="stylesheet" href="book_appointment.css">
+    <script type="text/javascript" src="book_appointment.js"></script>
 </head>
 <body style="height: 100%;">
 <div class="topnav" style="width: 1000px;margin: auto;padding-left: 106px ">
@@ -19,31 +20,31 @@
         </div>
         <p class="labelText" style="top: 182px">
             <b>DATE</b></p>
-        <input class="inputBox" type="date" style="top:247px;">
+        <input id='date' class="inputBox" type="date" style="top:247px;">
         <p class="labelText" style="top: 343px">
             <b>TIME</b></p>
-        <input class="inputBox" type="time" style="position: absolute;top:400px;height: 41px; width: 285px">
+        <input id="time" class="inputBox" type="time" style="position: absolute;top:400px;height: 41px; width: 285px">
         <p class="labelText" style=";top: 502px">
             <b>SERVICE</b></p>
-        <input class="inputBox" type="text" style="top:564px">
+        <input id="service" class="inputBox" type="text" style="top:564px">
         <p class="labelText" style="top: 659px">
             <b>STYLIST</b></p>
-        <input class="inputBox" type="text" style="top:720px">
+        <input id="stylist" class="inputBox" type="text" style="top:720px">
 
         <p class="labelText2" style="top: 182px; margin-left: 536px">
             <b>NAME</b></p>
-        <input class="inputBox" type="text" style="margin-left:536px;top:247px;">
+        <input id="name" class="inputBox" type="text" style="margin-left:536px;top:247px;">
         <p class="labelText2" style="top: 343px; margin-left: 536px">
             <b>EMAIL</b></p>
-        <input class="inputBox" type="text" style="margin-left:536px;top:400px;">
+        <input id="email" class="inputBox" type="text" style="margin-left:536px;top:400px;">
         <p class="labelText2" style="top: 502px; margin-left: 536px">
             <b>PHONE NUMBER</b></p>
-        <input class="inputBox" type="text" style="margin-left:536px;top:564px">
+        <input id="phone" class="inputBox" type="text" style="margin-left:536px;top:564px">
         <div class="sepLine" style="position: absolute;top: 839px;left:0;right: 0;margin: auto"></div>
         <button type="button" class="navBtn" style="top:909px;margin-left: 187px ;background-color: gray;">
             <b class="buttonText">CANCEL</b>
         </button>
-        <button onclick="window.location.href='confirmation_info.html'" class="navBtn"  type="button" style="top:909px;margin-left: 536px;background-color: orange">
+        <button onclick="afterCheck()" class="navBtn"  type="button" style="top:909px;margin-left: 536px;background-color: orange">
             <b class="buttonText">CONTINUE</b>
         </button>
     </div>
